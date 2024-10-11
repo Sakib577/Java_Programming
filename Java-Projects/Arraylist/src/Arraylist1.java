@@ -1,6 +1,7 @@
 //The ArrayList class is a resizable array
 
 import java.util.ArrayList;
+import java.util.Collections; // to sort
 
 public class Arraylist1 {
     public static void main(String[] args) {
@@ -16,6 +17,10 @@ public class Arraylist1 {
         System.out.println("normally: "+cars);
 
         // You can also add an item at a specified position by referring to the index number
+
+        // sorting
+        Collections.sort(cars);
+        System.out.println("After sorting: "+ cars);
 
         cars.add(1, "Honda");
         System.out.println("After adding Honda to index 1: "+cars);
