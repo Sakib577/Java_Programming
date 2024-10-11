@@ -13,14 +13,23 @@ public class Main {
 
         System.out.println("Before sorting: "+ num);
 
-        Collections.sort(num);
+        Collections.reverse(num);
 
-        System.out.println("After sorting: "+num);
-
-        // reverse the order
+        System.out.println("After reversing: "+ num);
 
         Collections.sort(num, Collections.reverseOrder());
+        // It is only used for make the order descending.
 
-        System.out.println("After reverse sorting: "+num);
+        System.out.println("After reverse sorting or Descending: "+num);
+
+        // OR,
+
+        num.sort(Collections.reverseOrder());
+
+        System.out.println("After reverse sorting or Descending: "+num);
+
+        Collections.sort(num);
+        // It is sorting in ascending order
+        System.out.println("After sorting: "+num);
     }
 }
