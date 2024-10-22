@@ -31,5 +31,7 @@ public class Main {
         Collections.sort(num);
         // It is sorting in ascending order
         System.out.println("After sorting: "+num);
+
+
     }
 }
